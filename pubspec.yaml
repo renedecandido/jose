@@ -7,17 +7,20 @@ environment:
   sdk: '>=2.7.0 <3.0.0'
 
 dependencies:
-  crypto_keys: ^0.1.3
   meta: ^1.2.4
   typed_data: ^1.2.0
-  x509: ^0.1.3
+  x509:
+    git:
+      url: git://github.com/acoutts/x509
   http_extensions_cache: ^0.1.3
   http_extensions: ^0.1.2
   http: ^0.12.2
   asn1lib: ^0.8.1
 
 dependency_overrides:
-  asn1lib: ^0.8.1
+  crypto_keys:
+    git:
+      url: git://github.com/peiffer-innovations/crypto_keys
 
 dev_dependencies:
   test: ^1.15.7
